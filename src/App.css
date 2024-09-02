@@ -1,38 +1,166 @@
-.App {
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  color: black;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0%;
+  max-height: 600px;
+}
+
+.form-container {
+  max-width: 400px;
+  padding: 20px;
+  margin-right: 35px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.estilop {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contrato {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilos gerais da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f0f4ff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Estilos do cabeçalho da tabela */
+thead {
+  background-color: #007bff;
   color: white;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+thead th {
+  padding: 12px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos das linhas da tabela */
+tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+/* Cor de fundo para linhas pares e ímpares */
+tbody tr.even {
+  background-color: #fff;
+}
+
+tbody tr.odd {
+  background-color: #e9eefc;
+}
+
+/* Alterar a cor de fundo ao passar o mouse */
+tbody tr:hover {
+  background-color: #d0d7f5;
+}
+
+/* Estilo das células */
+td {
+  padding: 12px;
+  color: #555;
+}
+
+/* Estilo para a paginação */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/*Estilo do botão de paginação*/
+.pagination button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*Estilo do botão de paginação para quando não é mais possível passar a página*/
+.pagination button:disabled {
+  background-color: #b0b7d3;
+  cursor: not-allowed;
+}
+
+/* Estilo dos botões de paginação ao passar o mouse */
+.pagination button:not(:disabled):hover {
+  background-color: #4754a8;
+}
+
+/* Estilo do texto de paginação */
+.pagination span {
+  font-size: 14px;
+  color: #333;
 }
