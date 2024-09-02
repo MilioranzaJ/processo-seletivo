@@ -85,7 +85,7 @@ axios.get(url)//Requisição GET
               id="data-inicial"
               value={dataInicial}
               onChange={(e) => setDataInicial(e.target.value)}
-              placeholder="yyyy/mm/dd"
+              placeholder="yyyymmdd"
             />
           </div>
           <div className="form-group">
@@ -95,7 +95,7 @@ axios.get(url)//Requisição GET
               id="data-final"
               value={dataFinal}
               onChange={(e) => setDataFinal(e.target.value)}
-              placeholder="yyyy/mm/dd"
+              placeholder="yyyymmdd"
             />
           </div>
           {validationError && <p style={{ color: 'red' }}>{validationError}</p>}
